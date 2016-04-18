@@ -4630,10 +4630,10 @@ for (var i = 0; i < rules.length; i++) {
 }
 
 function FindProxyForURL(url, host) {
-    if (defaultMatcher.matchesAny(url, host) instanceof BlockingFilter) {
+    //if (defaultMatcher.matchesAny(url, host) instanceof BlockingFilter) {
         //return proxy;
 	//将ip和端口替换为{你的服务器ip}:{上面的local_port}
       return "SOCKS5 23.105.193.14:1080; SOCKS 23.105.193.14:1080";
-    }
-    return direct;
+    //}
+    //return direct;
 }
